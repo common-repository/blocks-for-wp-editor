@@ -1,0 +1,111 @@
+{
+    "apiVersion": 2,
+    "name": "s2-wp-editor-blocks/post",
+    "category": "widgets",
+    "attributes": {
+        "postTemplateColumn": {
+            "type": "number",
+            "default": 1
+        },
+
+        "postType": {
+            "type": "string",
+            "default": "post"
+        },
+        "order": {
+            "type": "string",
+            "default": "desc"
+        },
+        "orderBy": {
+            "type": "string",
+            "default": "date"
+        },
+        "categories": {
+            "type": "array",
+            "items": {
+                "type": "object"
+            },
+            "default": null
+        },
+        "selectedAuthor": {
+            "type": "number",
+            "default": 1
+        },
+        "postsToShow": {
+            "type": "number",
+            "default": 5
+        },
+
+        "postTitleAlign": {
+            "type": "string",
+            "enum": [
+                "left",
+                "center",
+                "right"
+            ],
+            "default": "left"
+        },
+        "postTitleLength": {
+            "type": "number",
+            "default": 5
+        },
+        "displayPostAuthor": {
+            "type": "boolean",
+            "default": false
+        },
+        "displayPostDate": {
+            "type": "boolean",
+            "default": false
+        },
+
+        "displayPostContent": {
+            "type": "boolean",
+            "default": false
+        },
+        "postContentAlign": {
+            "type": "string",
+            "enum": [
+                "left",
+                "center",
+                "right"
+            ],
+            "default": "left"
+        },
+        "displayPostContentRadio": {
+            "type": "string",
+            "default": "content"
+        },
+        "postContentLength": {
+            "type": "number",
+            "default": 55
+        },
+
+        "displayFeaturedImage": {
+            "type": "boolean",
+            "default": false
+        },
+        "featuredImageSizeSlug": {
+            "type": "string",
+            "default": "thumbnail"
+        },
+        "featuredImageAlign": {
+            "type": "string",
+            "enum": [
+                "left",
+                "center",
+                "right"
+            ],
+            "default": "left"
+        },
+        "addLinkToFeaturedImage": {
+            "type": "boolean",
+            "default": false
+        }
+    },
+    "supports": {
+        "align": true,
+        "html": false
+    },
+    "editorStyle": "s2-wp-editor-blocks-editor",
+    "style": "s2-wp-editor-blocks-style"
+}
